@@ -1,26 +1,16 @@
+# Node Chat Example
 
-    ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+Chat example to showcase how to use `socket.io` with a static `express` server.
 
+## Setup
 
-Welcome to Cloud9 IDE!
+    $ npm install
 
-To get you started, we have created a demo chat application.
+## Running the server
 
-1) Open the server.js file
+    $ node server.js
+       info  - socket.io started
+    Chat server listening at 0.0.0.0:3000
 
-2) Click the 'Run' button at the top to start your server,
-
-3) Click the URL that is emitted to the Output tab of the console
-
-Happy coding!
-The Cloud9 IDE team
-
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide.
+Once the server is running, open `http://localhost:3000` in your browser. As you enter your name, watch the Users list
+(on the left) update. Once you press Enter or Send, the message is shared with all connected clients.

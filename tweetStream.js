@@ -10,9 +10,13 @@ var twit = new twitter({
   access_token_secret: 'B66IMF6YbuY6LN2HCnTPFzctAEfwOk7Q8WxREmJ2VPJ1V'
 });
 
-twit.stream('user', function(stream) {
-    stream.on('data', function(data) {
-        adrian.insert(data);
+    twit.stream('user', function(stream) {
+        stream.on('data', function(data) {
+            adrian.insert ((data), '1');
+            console.log(data);
     });
 });
+
+
+
 
